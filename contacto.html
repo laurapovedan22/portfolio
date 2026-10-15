@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Laura Poveda</title>
+</head>
+
+<body>
+    <a href="#contenido">Saltar al contenido</a>
+    <header>
+        <p>Laura Poveda Nicolás</p>
+        <p>Estudiante de Ingeniería Matemática e Ingeniería Informática, interesada en el desarrollo de software y la
+            inteligencia artificial.</p>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="sobre-mi.html">Sobre mí</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="contenido" tabindex="-1">
+        <h1>Contacto</h1>
+        <form method="post" action="#">
+            <fieldset>
+                <legend>Tus datos</legend>
+                <p>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required minlength="2" maxlength="60"
+                        autocomplete="name">
+                </p>
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required autocomplete="email">
+                </p>
+                <p>
+                    <label for="empresa">Empresa u organización (opcional):</label>
+                    <input type="text" id="empresa" name="empresa" autocomplete="organization">
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Tu proyecto</legend>
+                <p>
+                    <label for="tipo-proyecto">Tipo de proyecto:</label>
+                    <select id="tipo-proyecto" name="tipo-proyecto" required>
+                        <option value="">Elige un tipo</option>
+                        <optgroup label="Web">
+                            <option value="web">Web</option>
+                        </optgroup>
+
+                        <optgroup label="App">
+                            <option value="app">App</option>
+                        </optgroup>
+                        <optgroup label="Otro">
+                            <option value="otro">Otro</option>
+                        </optgroup>
+                    </select>
+                </p>
+                <p>Modalidad:</p>
+                <p>
+                    <input type="radio" id="remoto" name="modalidad" value="remoto" checked>
+                    <label for="remoto">Remoto</label>
+
+                    <input type="radio" id="presencial" name="modalidad" value="presencial">
+                    <label for="presencial">Presencial</label>
+
+                    <input type="radio" id="hibrido" name="modalidad" value="hibrido">
+                    <label for="hibrido">Híbrido</label>
+                </p>
+                <p>Servicios:</p>
+                <p>
+                    <input type="checkbox" id="diseno" name="servicios" value="diseno">
+                    <label for="diseno">Diseño</label>
+
+                    <input type="checkbox" id="frontend" name="servicios" value="frontend">
+                    <label for="frontend">Front-end</label>
+
+                    <input type="checkbox" id="backend" name="servicios" value="backend">
+                    <label for="backend">Back-end</label>
+                </p>
+                <p>
+                    <label for="fecha-inicio">Fecha de inicio:</label>
+                    <input type="date" id="fecha-inicio" name="fecha-inicio" min="AAAA-MM-DD" required>
+                </p>
+                <p>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" required maxlength="500" rows="5"
+                        aria-describedby="ayuda-mensaje"></textarea>
+                </p>
+                <p id="ayuda-mensaje">
+                    Cuéntame qué necesitas y para cuándo.
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Cómo te respondo</legend>
+                <p>Preferencia de respuesta:</p>
+                <p>
+                    <input type="radio" id="respuesta-email" name="respuesta" value="email" checked>
+                    <label for="respuesta-email">Email</label>
+
+                    <input type="radio" id="respuesta-telefono" name="respuesta" value="telefono">
+                    <label for="respuesta-telefono">Teléfono</label>
+                </p>
+                <p>
+                    <label for="telefono">Teléfono (opcional):</label>
+                    <input type="tel" id="telefono" name="telefono" pattern="[6-9][0-9]{8}"
+                        title="Introduce nueve cifras, sin espacios ni prefijo +34, comenzando por 6, 7, 8 o 9."
+                        autocomplete="tel">
+                </p>
+                <p>
+                    <input type="checkbox" id="privacidad" name="privacidad" required>
+                    <label for="privacidad">
+                        Acepto la política de privacidad
+                    </label>
+                </p>
+            </fieldset>
+            <p>
+                <button type="submit">Enviar mensaje</button>
+                <button type="reset">Borrar</button>
+            </p>
+        </form>
+    </main>
+
+    <footer>
+        <h2>Contacto</h2>
+
+        <address>
+            <p>
+                Email:
+                <a href="mailto:laurapovedan22@gmail.com">
+                    laurapovedan22@gmail.com
+                </a>
+            </p>
+        </address>
+
+        <p>
+            <a href="https://github.com/laurapovedan22" target="_blank" rel="noopener">GitHub</a>
+        </p>
+
+        <p>
+            <a href="https://www.linkedin.com/in/laura-poveda-nicol%C3%A1s" target="_blank" rel="noopener">LinkedIn</a>
+        </p>
+
+        <small>&copy; 2026 Laura Poveda. Todos los derechos reservados.</small>
+    </footer>
+</body>
+
+</html>
