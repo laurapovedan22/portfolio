@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="40" viewBox="0 0 80 40" role="img" aria-labelledby="titulo descripcion">
+  <title id="titulo">Monograma LP de Laura Poveda</title>
+  <desc id="descripcion">Iniciales geométricas en marfil sobre fondo azul noche, con acentos violeta y turquesa.</desc>
+  <rect width="80" height="40" rx="10" fill="#151c32"/>
+  <path d="M12 12 7 20l5 8" fill="none" stroke="#a99bff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="m68 12 5 8-5 8" fill="none" stroke="#62dec9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M22 10v20h14" fill="none" stroke="#f8f5ed" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M44 30V10h8a6 6 0 0 1 0 12h-8" fill="none" stroke="#f8f5ed" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="61" cy="30" r="2" fill="#62dec9"/>
+</svg>
